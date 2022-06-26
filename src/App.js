@@ -4,7 +4,7 @@ import Form from "./components/Form";
 import Navbar from "./components/Navbar";
 import React, { useState } from "react";
 import Alert from "./components/Alert";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   const [mode, setMode] = useState("light");
   const [alert, setAlert] = useState(null);
@@ -30,23 +30,23 @@ function App() {
   };
   return (
     <>
-      {/* <Router> */}
+     <Router>
         <Navbar mode={mode} toggleMode={toggleMode} />
 
         <Alert alert={alert} />
         <div className="container">
-          {/* <Routes>
+          <Routes>
             <Route
               exact
               path="/"
-              element={/>}
+              element={ <Form title="This is the first form" mode={mode} /> }
             />
-            {/* <Route path="/about" element={<About/>}/> */}
-           <Form title="This is the first form" mode={mode} />   
+             <Route path="/about" element={<About/>}/>
+            
            
-          {/* </Routes> */}
+           </Routes> 
         </div>
-      {/* </Router> */}
+     </Router> 
     </>
   );
 }

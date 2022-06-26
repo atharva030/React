@@ -33,10 +33,10 @@ export default function Form(props) {
             }}
           ></textarea>
         </div>
-        <button className="btn btn-primary" onClick={handleUpClick}>
+        <button className="btn btn-primary mx-3" onClick={handleUpClick}>
           Convert to UpperCase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleClearClick}>
+        <button className="btn btn-primary my-3" onClick={handleClearClick}>
           Clear Text
         </button>
       </div>
