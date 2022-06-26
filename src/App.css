@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+:root {
+  --gradient: linear-gradient(90deg, #f1c40f, #f39c12);
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
